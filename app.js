@@ -207,6 +207,36 @@ let isAdultPresent = devs.some(dev => currentYear - dev.year >= 18);
 console.log('Exercise 6 my result: ', isAdultPresent);
 console.log('Exercise 6 correct result: ', true);
 
+// Exercise 7
+
+new Date().getFullYear();
+
+let isEveryone19OrOlder = devs.every(dev => currentYear - dev.year >= 19);
+
+// Check your work:
+console.log('Exercise 7 my result: ', isEveryone19OrOlder);
+console.log('Exercise 7 correct result: ', false);
+
+console.log(isEveryone19OrOlder);
+
+// Exercise 8
+
+let commentById = comments.find(comment => comment.id === 823423);
+
+// Check your work:
+console.log('Exercise 8 my result: ', commentById);
+console.log('Exercise 8 correct result: ', { text: 'Super good', id: 823423 });
+ 
+console.log(commentById);
+
+// Exercise 9
+
+let idx = comments.findIndex(comment => comment.id === 123523);
+
+// Check your work:
+console.log('Exercise 9 my result: ', idx);
+console.log('Exercise 9 correct result: ', 3);
+
 
 
 
